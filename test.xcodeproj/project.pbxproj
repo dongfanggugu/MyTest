@@ -16,6 +16,13 @@
 		657791721F4537A70008822D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657791701F4537A70008822D /* LaunchScreen.storyboard */; };
 		6577917D1F4537A70008822D /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6577917C1F4537A70008822D /* testTests.m */; };
 		657791881F4537A70008822D /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 657791871F4537A70008822D /* testUITests.m */; };
+		657791981F4679590008822D /* CustView.m in Sources */ = {isa = PBXBuildFile; fileRef = 657791971F4679590008822D /* CustView.m */; };
+		65AB4260202849C600391742 /* MyAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AB425F202849C600391742 /* MyAnimationViewController.m */; };
+		65D625F51F5F92DB00E7AFE1 /* BackgroundRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D625F41F5F92DB00E7AFE1 /* BackgroundRunner.m */; };
+		65D625F81F5FD4FA00E7AFE1 /* location.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D625F71F5FD4FA00E7AFE1 /* location.m */; };
+		65FED56C1F4AAD2500D645A9 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FED5681F4AAD2500D645A9 /* GCDAsyncSocket.m */; };
+		65FED56D1F4AAD2500D645A9 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FED56A1F4AAD2500D645A9 /* GCDAsyncUdpSocket.m */; };
+		65FED5711F4AB9ED00D645A9 /* SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FED5701F4AB9ED00D645A9 /* SocketViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,21 @@
 		657791831F4537A70008822D /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		657791871F4537A70008822D /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		657791891F4537A70008822D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		657791961F4679590008822D /* CustView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustView.h; sourceTree = "<group>"; };
+		657791971F4679590008822D /* CustView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustView.m; sourceTree = "<group>"; };
+		65AB425E202849C600391742 /* MyAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAnimationViewController.h; sourceTree = "<group>"; };
+		65AB425F202849C600391742 /* MyAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAnimationViewController.m; sourceTree = "<group>"; };
+		65D625F31F5F92DB00E7AFE1 /* BackgroundRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundRunner.h; sourceTree = "<group>"; };
+		65D625F41F5F92DB00E7AFE1 /* BackgroundRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundRunner.m; sourceTree = "<group>"; };
+		65D625F61F5FD4FA00E7AFE1 /* location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = location.h; path = ../location.h; sourceTree = "<group>"; };
+		65D625F71F5FD4FA00E7AFE1 /* location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = location.m; path = ../location.m; sourceTree = "<group>"; };
+		65FED5641F4AAD2500D645A9 /* CocoaAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocket.h; sourceTree = "<group>"; };
+		65FED5671F4AAD2500D645A9 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		65FED5681F4AAD2500D645A9 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		65FED5691F4AAD2500D645A9 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		65FED56A1F4AAD2500D645A9 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		65FED56F1F4AB9ED00D645A9 /* SocketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketViewController.h; sourceTree = "<group>"; };
+		65FED5701F4AB9ED00D645A9 /* SocketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +105,7 @@
 		657791531F4537A60008822D = {
 			isa = PBXGroup;
 			children = (
+				65FED5631F4AAC3D00D645A9 /* Vendor */,
 				6577915E1F4537A60008822D /* test */,
 				6577917B1F4537A70008822D /* testTests */,
 				657791861F4537A70008822D /* testUITests */,
@@ -103,6 +126,8 @@
 		6577915E1F4537A60008822D /* test */ = {
 			isa = PBXGroup;
 			children = (
+				65FED56E1F4AB9C100D645A9 /* ViewControllers */,
+				657791951F4679460008822D /* View */,
 				657791621F4537A60008822D /* AppDelegate.h */,
 				657791631F4537A60008822D /* AppDelegate.m */,
 				657791651F4537A60008822D /* ViewController.h */,
@@ -110,6 +135,10 @@
 				657791681F4537A60008822D /* Main.storyboard */,
 				6577916E1F4537A70008822D /* Assets.xcassets */,
 				657791701F4537A70008822D /* LaunchScreen.storyboard */,
+				65D625F31F5F92DB00E7AFE1 /* BackgroundRunner.h */,
+				65D625F41F5F92DB00E7AFE1 /* BackgroundRunner.m */,
+				65D625F61F5FD4FA00E7AFE1 /* location.h */,
+				65D625F71F5FD4FA00E7AFE1 /* location.m */,
 				657791731F4537A70008822D /* Info.plist */,
 				6577916B1F4537A70008822D /* test.xcdatamodeld */,
 				6577915F1F4537A60008822D /* Supporting Files */,
@@ -141,6 +170,46 @@
 				657791891F4537A70008822D /* Info.plist */,
 			);
 			path = testUITests;
+			sourceTree = "<group>";
+		};
+		657791951F4679460008822D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				657791961F4679590008822D /* CustView.h */,
+				657791971F4679590008822D /* CustView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		65FED5631F4AAC3D00D645A9 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				65FED5641F4AAD2500D645A9 /* CocoaAsyncSocket.h */,
+				65FED5651F4AAD2500D645A9 /* GCD */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		65FED5651F4AAD2500D645A9 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				65FED5671F4AAD2500D645A9 /* GCDAsyncSocket.h */,
+				65FED5681F4AAD2500D645A9 /* GCDAsyncSocket.m */,
+				65FED5691F4AAD2500D645A9 /* GCDAsyncUdpSocket.h */,
+				65FED56A1F4AAD2500D645A9 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		65FED56E1F4AB9C100D645A9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				65FED56F1F4AB9ED00D645A9 /* SocketViewController.h */,
+				65FED5701F4AB9ED00D645A9 /* SocketViewController.m */,
+				65AB425E202849C600391742 /* MyAnimationViewController.h */,
+				65AB425F202849C600391742 /* MyAnimationViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +279,13 @@
 				TargetAttributes = {
 					6577915B1F4537A60008822D = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6LK27K74LE;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					657791771F4537A70008822D = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -276,10 +351,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FED56C1F4AAD2500D645A9 /* GCDAsyncSocket.m in Sources */,
+				65FED5711F4AB9ED00D645A9 /* SocketViewController.m in Sources */,
 				657791671F4537A60008822D /* ViewController.m in Sources */,
 				6577916D1F4537A70008822D /* test.xcdatamodeld in Sources */,
+				65D625F51F5F92DB00E7AFE1 /* BackgroundRunner.m in Sources */,
+				65AB4260202849C600391742 /* MyAnimationViewController.m in Sources */,
 				657791641F4537A60008822D /* AppDelegate.m in Sources */,
+				65FED56D1F4AAD2500D645A9 /* GCDAsyncUdpSocket.m in Sources */,
 				657791611F4537A60008822D /* main.m in Sources */,
+				65D625F81F5FD4FA00E7AFE1 /* location.m in Sources */,
+				657791981F4679590008822D /* CustView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6LK27K74LE;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhenhao.test;
@@ -439,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6LK27K74LE;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhenhao.test;
@@ -511,6 +595,7 @@
 				6577918E1F4537A70008822D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6577918F1F4537A70008822D /* Build configuration list for PBXNativeTarget "testTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +604,7 @@
 				657791911F4537A70008822D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		657791921F4537A70008822D /* Build configuration list for PBXNativeTarget "testUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +613,7 @@
 				657791941F4537A70008822D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

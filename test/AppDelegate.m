@@ -7,8 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "BackgroundRunner.h"
+#import "location.h"
 
 @interface AppDelegate ()
+{
+    int count;
+    UIBackgroundTaskIdentifier _identifier;
+}
 
 @end
 
@@ -17,6 +23,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //[self redirectNSLogToDocumentFolder];
     return YES;
 }
 
@@ -30,8 +37,32 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    [self beginTask];
+    [NSTimer scheduledTimerWithTimeInterval:5 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        NSLog(@"current time: %@", [self format]);
+        NSLog(@"remain time: %ld", (NSInteger)[UIApplication sharedApplication].backgroundTimeRemaining);
+    }];
 }
 
+- (NSString *)format
+{
+    NSDate *date = [NSDate date];
+    NSDateFormatter *format = [[NSDateFormatter alloc] init];
+    format.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    NSString *result = [format stringFromDate:date];
+    
+    return result;
+}
+
+- (void)beginTask
+{
+    _identifier = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+        NSLog(@"background recycle");
+        [[UIApplication sharedApplication] endBackgroundTask:_identifier];
+        [self beginTask];
+    }];
+}
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
@@ -93,6 +124,22 @@
         NSLog(@"Unresolved error %@, %@", error, error.userInfo);
         abort();
     }
+}
+
+- (void)redirectNSLogToDocumentFolder
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,
+                                                         YES);
+    NSString *documentDirectory = [paths objectAtIndex:0];
+    NSString *fileName = [NSString stringWithFormat:@"dr.log"];
+    NSString *logFilePath = [documentDirectory stringByAppendingPathComponent:fileName];
+    
+    //NSFileManager *defaultManager = [NSFileManager defaultManager];
+    //[defaultManager removeItemAtPath:logFilePath error:nil];
+    
+    //output the log to the file
+    freopen([logFilePath cStringUsingEncoding:NSASCIIStringEncoding], "a+", stdout);
+    freopen([logFilePath cStringUsingEncoding:NSASCIIStringEncoding], "a+", stderr);
 }
 
 @end
